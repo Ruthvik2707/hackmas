@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+.main{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    background-color:black;
+    height:100vh;
+}

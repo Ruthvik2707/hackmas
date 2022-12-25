@@ -1,0 +1,148 @@
+.text-msg{
+    /* display: block; */
+    margin-top: 10% ;
+    margin-left: 10%;
+    color:white;
+    width: 40vw;
+}
+.contents{
+    height: 100vh;
+    background-color: rgb(21, 6, 6);
+}
+.contents{
+    width:auto;
+}
+.Text_msg{
+    font-size: 5rem;
+    /* width:50%; */
+
+}
+.idk{
+  text-decoration: none;
+  color: rgb(6, 228, 240);
+}
+.contact_info{
+    font-size: 1.5rem;
+    color: rgb(6, 228, 240);
+    width:10vw;
+    border:1px solid rgb(6, 228, 240);
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: center;
+    line-height: 200%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+/* For button  */
+.contact_info{
+    color:  rgb(6, 228, 240);
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+  }
+  .contact_info {
+    background:  rgb(21, 6, 6);
+    border: 1px groove rgb(6, 228, 240);
+    z-index: 1;
+  }
+  .contact_info:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color:rgb(6, 228, 240);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .contact_info:hover {
+    color:  rgb(21, 6, 6);
+    background-color: rgb(6, 228, 240);
+    transition: all 0.5s ease;
+  }
+  .idk:hover{
+    color:black;
+  }
+  .contact_info:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .contact_info:active {
+    top: 2px;
+  }
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background:#4ecdc4 ;
+  }
+.clip{
+    rotate: 20deg;
+    color:#4ecdc4 ;
+    font-size: 1.8rem;
+    position: fixed;
+    top:15%;
+    right:12%;
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.clip:first-of-type {    /* For increasing performance 
+    ID/Class should've been used. 
+    For a small demo 
+    it's okaish for now */
+animation: showup 7s infinite;
+}
+
+.clip:last-of-type {
+width:0px;
+animation: reveal 7s infinite;
+}
+
+.clip:last-of-type span {
+margin-left:-355px;
+animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+0% {opacity:0;}
+20% {opacity:1;}
+80% {opacity:1;}
+100% {opacity:0;}
+}
+
+@keyframes slidein {
+0% { margin-left:-400px; }
+20% { margin-left:-400px; }
+35% { margin-left:0px; }
+100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+0% {opacity:0;width:0px;}
+20% {opacity:1;width:0px;}
+30% {width:300px;}
+80% {opacity:1;}
+100% {opacity:0;width:355px;}
+}
+.fa-paperclip{
+    color:rgba(6, 228, 240, 0.597);
+    font-size: 2rem;
+    position:fixed;
+    right:11.5%;
+    top:15%;
+}
+.tape{
+    position: fixed;
+    top:-18%; 
+    right: 4%;}
+.left{
+    text-align: left;
+}

@@ -1,0 +1,44 @@
+.content{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    gap:10%;
+}
+.text{
+    color:white;
+    width:40vw;
+    text-align:justify;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.link{
+    text-decoration: None;
+    color:rgb(6, 228, 240);
+    border: 3px solid rgb(6, 228, 240);
+    text-align: center;
+}
+.heading{
+    font-size: 3rem;
+    color:rgb(6, 228, 240);
+}
+.alignment{
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+.info{
+    margin-top:5%;
+    border:2px red;
+    width:20vw;
+}
+.image{
+    width: 20vw;
+    height: 40vh;
+    border-radius: 50%;
+}
+.education{
+    color:white;
+    font-size: 0.8rem;
+}
+.mentions{
+    color:white;
+}
